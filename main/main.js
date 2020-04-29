@@ -1,17 +1,21 @@
-const comment = document.querySelector(".no-outline");
-const comments = document.querySelector(".comments");
-const commentList = document.createElement("ul");
+let comment = document.querySelectorAll(".no-outline"); //input
+let commentList = document.querySelectorAll(".comments-list");
 
-function handleKey(e) {
-  const comment_text = comment.value;
-  if (e.key === "Enter") {
-    const newComment = document.createElement("li");
-    newComment.innerHTML = comment_text;
+for (let i = 0; i < comment.length; i++) {
+  comment[i].addEventListener("keypress", function (e) {
+    if (e.key === "Enter") {
+      let createComment = document.createElement("li");
+      let commentId = document.querySelector(".comment-id").innerHTML;
 
-    commentList.appendChild(newComment);
-    comments.appendChild(commentList);
-    comment.value = "";
-  }
+      createComment;
+      createComment.className = "new";
+
+      let comment_text = comment[i].value;
+
+      createComment.innerHTML = `${commentId}   ${comment_text}`;
+
+      commentList[i].appendChild(createComment);
+      comment[i].value = "";
+    }
+  });
 }
-
-comment.addEventListener("keyup", handleKey);

@@ -168,7 +168,22 @@ nav .nav-right img {
   margin-left: 15px;
 }
 
-.feeds .feed input {
+.comments-form {
+  display: flex;
+}
+
+.comments-form button {
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  color: #0095f6;
+  font-weight: 600;
+  font-size: 15px;
+  width: 70px;
+  padding-right: 20px;
+  opacity: 50%;
+}
+
+.no-outline {
   border-top-style: hidden;
   border-right-style: hidden;
   border-left-style: hidden;
@@ -178,6 +193,7 @@ nav .nav-right img {
   height: 60px;
   border-top: 1px solid rgba(0, 0, 0, 0.2);
   font-size: 16px;
+  padding: 0 20px;
 }
 
 .feeds .feed input::placeholder {
@@ -188,8 +204,8 @@ nav .nav-right img {
   outline: none;
 }
 
-.no-outline {
-  padding: 0 20px;
+.comments-form button:focus {
+  outline: none;
 }
 
 .main-right {
@@ -277,4 +293,8 @@ img.profile-img {
 
 .footer .copyright {
   margin-top: 22px;
+}
+
+.new {
+  margin-left: 15px;
 }

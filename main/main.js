@@ -19,3 +19,17 @@ for (let i = 0; i < comment.length; i++) {
     }
   });
 }
+
+const btn = document.querySelectorAll("button");
+for(let i =0; i < btn.length; i++ ){
+    btn[i].addEventListener('click', function(e){
+        if (comment.value !== "") {
+          classList.add("");
+        } else {
+          login_btn.classList.remove("");
+        }
+      })
+
+  
+
+

@@ -172,7 +172,7 @@ nav .nav-right img {
   display: flex;
 }
 
-.comments-form button {
+.coBtn {
   border: none;
   border-top: 1px solid rgba(0, 0, 0, 0.2);
   color: #0095f6;

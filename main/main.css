@@ -180,7 +180,12 @@ nav .nav-right img {
   font-size: 15px;
   width: 70px;
   padding-right: 20px;
-  opacity: 50%;
+  opacity: 0.5;
+}
+
+.activeBtn {
+  opacity: 1;
+  cursor: pointer;
 }
 
 .no-outline {

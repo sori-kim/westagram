@@ -1,0 +1,280 @@
+@import "reset.css";
+
+* {
+  box-sizing: border-box;
+}
+
+main {
+  width: 70%;
+  height: 150vh;
+  margin: 0 auto;
+  display: flex;
+}
+
+nav img {
+  height: 24px;
+}
+
+nav img.logo {
+  height: 32px;
+}
+
+nav {
+  width: 100%;
+  border-bottom: 1.5px solid rgba(0, 0, 0, 0.2);
+  background-color: #ffff;
+  position: fixed;
+}
+
+nav .nav-container {
+  width: 70%;
+  height: 52px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .nav-container .nav-left img {
+  margin: 0 auto;
+  text-align: center;
+}
+
+nav .nav-container .nav-center input {
+  width: 250px;
+  height: 30px;
+  border-radius: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #fafafa;
+  font-size: 14px;
+  padding-left: 10px;
+}
+
+.nav-center input:focus {
+  outline: none;
+}
+
+nav .nav-container .nav-center input::placeholder {
+  text-align: center;
+  font-size: 13px;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+nav .nav-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav .nav-right img {
+  margin-left: 25px;
+}
+
+.feeds {
+  width: 65%;
+  margin-top: 70px;
+}
+
+.feeds .feed {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: #ffff;
+  margin-bottom: 60px;
+}
+
+.feed .profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.profile-left {
+  display: flex;
+  align-items: center;
+}
+
+.profile .profile-img {
+  width: 37px;
+  height: 37px;
+  border-radius: 17px;
+  margin: 0 15px;
+}
+.profile-id {
+  font-size: 17px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.profile .profile-more {
+  width: 25px;
+  margin-right: 15px;
+}
+
+.feed .icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.feed .icons img {
+  width: 25px;
+  margin: 8px 0;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.feed .icons img:last-child {
+  margin-right: 15px;
+}
+
+.feed-img {
+  width: 648px;
+}
+
+.feeds .description {
+  display: flex;
+  margin: 10px 0;
+  margin-left: 15px;
+}
+
+.feeds .description .desc-id {
+  font-size: 17px;
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+.feeds .description .desc-blah {
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.feeds .comments {
+  display: flex;
+  margin-left: 15px;
+}
+
+.feeds .comments .comment-id {
+  margin-right: 5px;
+}
+
+.feeds .feed .time {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 13px;
+  margin: 10px 0;
+  margin-left: 15px;
+}
+
+.feeds .feed .like {
+  margin-left: 15px;
+}
+
+.feeds .feed input {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+
+  width: 100%;
+  height: 60px;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+}
+
+.feeds .feed input::placeholder {
+  font-size: 14px;
+}
+
+.no-outline:focus {
+  outline: none;
+}
+
+.no-outline {
+  padding: 0 20px;
+}
+
+.main-right {
+  width: 25%;
+  height: 100%;
+  margin-top: 70px;
+  position: fixed;
+  margin-left: 680px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-right img {
+  margin-right: 18px;
+  border-radius: 20px;
+}
+
+.profile-me {
+  display: flex;
+  align-items: center;
+}
+
+.profile-me {
+  padding: 55px 0 30px 0;
+}
+
+.profile-desc {
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+img.profile-img {
+  width: 55px;
+  border-radius: 25px;
+}
+
+.reco-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.span-forme {
+  font-size: 15px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.span-all {
+  font-size: 12px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.9);
+  cursor: pointer;
+}
+
+.recommendation img {
+  width: 30px;
+}
+
+.profile-others {
+  display: flex;
+  flex-direction: column;
+}
+
+.other {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.follow {
+  color: #0095f6;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 13px;
+  margin-left: 155px;
+}
+
+.footer {
+  width: 80%;
+  margin-top: 30px;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.footer .copyright {
+  margin-top: 22px;
+}

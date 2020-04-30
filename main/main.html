@@ -72,7 +72,9 @@
 
           <form class="comments-form">
             <input class="no-outline" type="text" placeholder="댓글달기..." />
-            <button class="coBtn">게시</button class="coBtn">
+            <div class="btn-wrapper">
+             <div class="coBtn">게시</button class="coBtn">
+            </div>  
           </form>
         </article>
 
@@ -111,7 +113,9 @@
 
           <form class="comments-form">
             <input class="no-outline" type="text" placeholder="댓글달기..." />
-            <button class="coBtn">게시</button>
+            <div class="btn-wrapper">
+             <button class="coBtn">게시</button>
+            </div>
           </form>
         </article>
 
@@ -151,14 +155,16 @@
 
           <form class="comments-form">
             <input class="no-outline" type="text" placeholder="댓글달기..." />
-            <button class="coBtn">게시</button>
+            <div class="btn-wrapper">
+             <button class="coBtn">게시</button>
+            </div>
           </form>
         </article>
       </div>
 
       <div class="main-right">
         <div class="profile-me">
-          <img class="profile-img" src="images/sori.jpg" />
+          <img class="myImg" src="images/sori.jpg" />
           <div class="profile-right">
             <div class="profile-id">x.xiaori</div>
             <div class="profile-desc">김소리 Sori Kim (Rosie)</div>
@@ -172,53 +178,63 @@
           </div>
 
           <div class="profile-others">
+            
             <div class="other">
-              <img src="images/sewoon.jpg" />
-              <div class="others-desc">
-                <div class="profile-id">sewoon_j</div>
-                <div class="profile-desc">회원님을 팔로우합니다.</div>
+              <div class="other-left">
+                <img class="otherImg" src="images/sewoon.jpg" />
+                <div class="others-desc">
+                 <div class="profile-id">sewoon_j</div>
+                 <div class="profile-desc">회원님을 팔로우합니다.</div>  
+                </div>
               </div>
               <div class="follow">팔로우</div>
             </div>
 
             <div class="other">
-              <img src="images/eunwoo.jpg" />
-              <div class="others-desc">
-                <div class="profile-id">eunwo.o_c</div>
-                <div class="profile-desc">회원님을 팔로우합니다.</div>
+                <div class="other-left">
+                  <img class="otherImg" src="images/eunwoo.jpg" />
+                  <div class="others-desc">
+                   <div class="profile-id">eunwo.o_c</div>
+                   <div class="profile-desc">회원님을 팔로우합니다.</div>  
+                  </div>
+                </div>
+                <div class="follow">팔로우</div>
               </div>
-              <div class="follow">팔로우</div>
+
+              <div class="other">
+                <div class="other-left">
+                  <img class="otherImg" src="images/jun.jpg" />
+                  <div class="others-desc">
+                   <div class="profile-id">seokj1012</div>
+                   <div class="profile-desc">회원님을 팔로우합니다.</div>  
+                  </div>
+                </div>
+                <div class="follow">팔로우</div>
+              </div>
+
+              <div class="other">
+                <div class="other-left">
+                  <img class="otherImg" src="images/neo.jpg" />
+                  <div class="others-desc">
+                   <div class="profile-id">natgeo</div>
+                   <div class="profile-desc">회원님을 팔로우합니다.</div>  
+                  </div>
+                </div>
+                <div class="follow">팔로우</div>
+              </div>
+
             </div>
 
-            <div class="other">
-              <img src="images/jun.jpg" />
-              <div class="others-desc">
-                <div class="profile-id">seokj1012</div>
-                <div class="profile-desc">회원님을 팔로우합니다.</div>
-              </div>
-              <div class="follow">팔로우</div>
-            </div>
-
-            <div class="other">
-              <img src="images/neo.jpg" />
-              <div class="others-desc">
-                <div class="profile-id">natgeo</div>
-                <div class="profile-desc">회원님을 팔로우합니다.</div>
-              </div>
-              <div class="follow">팔로우</div>
-            </div>
+          <div class="footer">
+            <p class="desc">
+              소개 . 도움말 . 홍보 센터 . API .채용 정보 . 개인정보처리방침 . 약관
+              . 위치 . 인기계정 . 해시태그 . 언어
+            </p>
+            <p class="copyright">© 2020 INSTAGRAM FROM FACEBOOK</p>
           </div>
         </div>
-
-        <div class="footer">
-          <p class="desc">
-            소개 . 도움말 . 홍보 센터 . API .채용 정보 . 개인정보처리방침 . 약관
-            . 위치 . 인기계정 . 해시태그 . 언어
-          </p>
-          <p class="copyright">© 2020 INSTAGRAM FROM FACEBOOK</p>
-        </div>
-      </div>
     </main>
+
     <script src="main.js"></script>
   </body>
 </html>

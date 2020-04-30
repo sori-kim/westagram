@@ -4,11 +4,16 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #fafafa;
+}
+
 main {
   width: 70%;
-  height: 150vh;
   margin: 0 auto;
   display: flex;
+  justify-content: center;
+  background-color: #fafafa;
 }
 
 nav img {
@@ -22,7 +27,7 @@ nav img.logo {
 nav {
   width: 100%;
   border-bottom: 1.5px solid rgba(0, 0, 0, 0.2);
-  background-color: #ffff;
+  background-color: white !important;
   position: fixed;
 }
 
@@ -71,21 +76,21 @@ nav .nav-right img {
 }
 
 .feeds {
-  width: 65%;
-  margin-top: 70px;
+  margin-top: 40px;
 }
 
-.feeds .feed {
+.feed {
   border: 1px solid rgba(0, 0, 0, 0.2);
-  background-color: #ffff;
-  margin-bottom: 60px;
+  background-color: #ffffff;
+  margin: 50px auto;
 }
 
-.feed .profile {
+.profile {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 0;
+  background-color: #ffffff;
 }
 
 .profile-left {
@@ -93,7 +98,7 @@ nav .nav-right img {
   align-items: center;
 }
 
-.profile .profile-img {
+.profile-img {
   width: 37px;
   height: 37px;
   border-radius: 17px;
@@ -153,34 +158,45 @@ nav .nav-right img {
   margin-left: 15px;
 }
 
-.feeds .comments .comment-id {
+.comments .comment-id {
   margin-right: 5px;
 }
 
-.feeds .feed .time {
+.feed .time {
   color: rgba(0, 0, 0, 0.4);
   font-size: 13px;
   margin: 10px 0;
   margin-left: 15px;
 }
 
-.feeds .feed .like {
+.feed .like {
   margin-left: 15px;
 }
 
 .comments-form {
   display: flex;
+  background-color: #ffffff !important;
+}
+
+.btn-wrapper {
+  position: relative;
+  width: 70px;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .coBtn {
   border: none;
-  border-top: 1px solid rgba(0, 0, 0, 0.2);
   color: #0095f6;
   font-weight: 600;
   font-size: 15px;
-  width: 70px;
-  padding-right: 20px;
   opacity: 0.5;
+  position: absolute;
+  top: 20px;
+  left: 15px;
+}
+
+.coBtn:focus {
+  outline: none;
 }
 
 .activeBtn {
@@ -209,31 +225,25 @@ nav .nav-right img {
   outline: none;
 }
 
-.comments-form button:focus {
-  outline: none;
-}
-
+/* 우측 친구추천 바 스타일링 */
 .main-right {
+  background-color: #fafafa;
   width: 25%;
-  height: 100%;
-  margin-top: 70px;
-  position: fixed;
-  margin-left: 680px;
+  margin-top: 80px;
+
   display: flex;
   flex-direction: column;
+  margin-left: 35px;
 }
 
 .main-right img {
   margin-right: 18px;
-  border-radius: 20px;
+  border-radius: 25px;
 }
 
 .profile-me {
   display: flex;
   align-items: center;
-}
-
-.profile-me {
   padding: 55px 0 30px 0;
 }
 
@@ -242,9 +252,8 @@ nav .nav-right img {
   color: rgba(0, 0, 0, 0.4);
 }
 
-img.profile-img {
+.myImg {
   width: 55px;
-  border-radius: 25px;
 }
 
 .reco-title {
@@ -265,10 +274,6 @@ img.profile-img {
   cursor: pointer;
 }
 
-.recommendation img {
-  width: 30px;
-}
-
 .profile-others {
   display: flex;
   flex-direction: column;
@@ -277,7 +282,16 @@ img.profile-img {
 .other {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   margin: 15px 0;
+}
+
+.other-left {
+  display: flex;
+}
+
+.other .otherImg {
+  width: 30px;
 }
 
 .follow {
@@ -285,7 +299,6 @@ img.profile-img {
   cursor: pointer;
   font-weight: 700;
   font-size: 13px;
-  margin-left: 155px;
 }
 
 .footer {

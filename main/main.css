@@ -8,6 +8,10 @@ body {
   background-color: #fafafa;
 }
 
+img {
+  cursor: pointer;
+}
+
 main {
   width: 70%;
   margin: 0 auto;

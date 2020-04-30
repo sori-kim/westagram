@@ -164,6 +164,7 @@ nav .nav-right img {
 
 .comments .comment-id {
   margin-right: 5px;
+  font-weight: 600;
 }
 
 .feed .time {
@@ -319,4 +320,8 @@ nav .nav-right img {
 
 .new {
   margin-left: 15px;
+}
+
+.comments-list .new {
+  padding-top: 5px;
 }

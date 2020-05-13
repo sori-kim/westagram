@@ -11,22 +11,18 @@ import profile from "../images/profile.png";
 export class Main extends React.Component {
   render() {
     return (
-      <div>
+      <div className="Main">
         <nav>
-          <div class="nav-container">
-            <div class="nav-left">
-              <img alt="logo" class="logo" src={logo} />
+          <div className="nav-container">
+            <div className="nav-left">
+              <img alt="logo" className="logo" src={logo} />
             </div>
 
-            <div class="nav-center">
-              <input
-                type="text"
-                placeholder="&#xF002; Search"
-                // style="font-family: Arial, FontAwesome;"
-              />
+            <div className="nav-center">
+              <input type="text" placeholder="&#xF002; Search" />
             </div>
 
-            <div class="nav-right">
+            <div className="nav-right">
               <img alt="explore icon" src={explore} />
               <img alt="heart icon" src={heart} />
               <img alt="profile icon" src={profile} />
@@ -35,7 +31,7 @@ export class Main extends React.Component {
         </nav>
 
         <main>
-          <div class="feeds">
+          <div className="feeds">
             <Feed />
           </div>
           <MainRight />

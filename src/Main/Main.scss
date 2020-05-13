@@ -1,82 +1,76 @@
-* {
-  box-sizing: border-box;
+.Main {
+  nav {
+    width: 100%;
+    border-bottom: 1.5px solid rgba(0, 0, 0, 0.2) !important;
+    background-color: white !important;
+    position: fixed;
+
+    .nav-container {
+      width: 70%;
+      height: 52px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .nav-left img {
+        margin: 0 auto;
+        text-align: center;
+        height: 32px;
+      }
+
+      .nav-center {
+        input {
+          width: 250px;
+          height: 30px;
+          border-radius: 3px;
+          border: 1px solid rgba(0, 0, 0, 0.1);
+          background-color: #fafafa;
+          font-size: 14px;
+          font-family: Arial, FontAwesome;
+          padding-left: 10px;
+
+          &:focus {
+            outline: none;
+          }
+
+          &::placeholder {
+            text-align: center;
+            font-size: 13px;
+            font-weight: 300;
+            color: rgba(0, 0, 0, 0.3);
+          }
+        }
+      }
+
+      .nav-right {
+        display: flex;
+        justify-content: flex-end;
+        img {
+          margin-left: 25px;
+          height: 24px;
+        }
+      }
+    }
+  }
+
+  main {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    background-color: #fafafa;
+  }
+
+  .feeds {
+    margin-top: 40px;
+  }
 }
 
-body {
-  background-color: #fafafa;
+.new {
+  margin-left: 15px;
 }
 
-img {
-  cursor: pointer;
-}
-
-main {
-  width: 70%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  background-color: #fafafa;
-}
-
-nav img {
-  height: 24px;
-}
-
-nav img.logo {
-  height: 32px;
-}
-
-nav {
-  width: 100%;
-  border-bottom: 1.5px solid rgba(0, 0, 0, 0.2) !important;
-  background-color: white !important;
-  position: fixed;
-}
-
-nav .nav-container {
-  width: 70%;
-  height: 52px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-nav .nav-container .nav-left img {
-  margin: 0 auto;
-  text-align: center;
-}
-
-nav .nav-container .nav-center input {
-  width: 250px;
-  height: 30px;
-  border-radius: 3px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: #fafafa;
-  font-size: 14px;
-  padding-left: 10px;
-}
-
-.nav-center input:focus {
-  outline: none;
-}
-
-nav .nav-container .nav-center input::placeholder {
-  text-align: center;
-  font-size: 13px;
-  font-weight: 300;
-  color: rgba(0, 0, 0, 0.3);
-}
-
-nav .nav-right {
-  display: flex;
-  justify-content: flex-end;
-}
-
-nav .nav-right img {
-  margin-left: 25px;
-}
-
-.feeds {
-  margin-top: 40px;
+.comments-list .new {
+  padding-top: 5px;
 }

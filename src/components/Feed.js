@@ -11,7 +11,7 @@ import icon_more from "../images/more.png";
 export class Feed extends React.Component {
   render() {
     return (
-      <article className="feed">
+      <article className="Feed">
         <div className="profile">
           <div className="profile-left">
             <img

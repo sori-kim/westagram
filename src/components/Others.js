@@ -5,7 +5,7 @@ import "./Others.scss";
 export class Others extends React.Component {
   render() {
     return (
-      <div class="other">
+      <div class="Other">
         <div class="other-left">
           <img class="otherImg" alt="sewoon" src={sewoon} />
           <div class="others-desc">

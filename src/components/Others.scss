@@ -1,21 +1,28 @@
-.other {
+.Other {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 15px 0;
-}
 
-.other-left {
-  display: flex;
-}
+  .other-left {
+    display: flex;
 
-.other .otherImg {
-  width: 30px;
-}
+    .otherImg {
+      width: 30px;
+    }
 
-.follow {
-  color: #0095f6;
-  cursor: pointer;
-  font-weight: 700;
-  font-size: 13px;
+    .others-desc {
+      .profile-desc {
+        font-size: 13px;
+        color: rgba(0, 0, 0, 0.4);
+      }
+    }
+  }
+
+  .follow {
+    color: #0095f6;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 13px;
+  }
 }

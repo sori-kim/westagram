@@ -1,5 +1,5 @@
 /* 우측 친구추천 바 스타일링 */
-.main-right {
+.MainRight {
   background-color: #fafafa;
   width: 25%;
   margin-top: 80px;
@@ -7,49 +7,50 @@
   display: flex;
   flex-direction: column;
   margin-left: 35px;
-}
 
-.main-right img {
-  margin-right: 18px;
-  border-radius: 25px;
-}
+  img {
+    margin-right: 18px;
+    border-radius: 25px;
+  }
 
-.profile-me {
-  display: flex;
-  align-items: center;
-  padding: 55px 0 30px 0;
-}
+  .profile-me {
+    display: flex;
+    align-items: center;
+    padding: 55px 0 30px 0;
 
-.profile-desc {
-  font-size: 13px;
-  color: rgba(0, 0, 0, 0.4);
-}
+    img {
+      width: 55px;
+    }
 
-.myImg {
-  width: 55px;
-}
+    .profile-desc {
+      font-size: 13px;
+      color: rgba(0, 0, 0, 0.4);
+    }
+  }
 
-.reco-title {
-  display: flex;
-  justify-content: space-between;
-}
+  .recommendation {
+    .reco-title {
+      display: flex;
+      justify-content: space-between;
 
-.span-forme {
-  font-size: 15px;
-  font-weight: 600;
-  color: rgba(0, 0, 0, 0.4);
-}
+      .span-forme {
+        font-size: 15px;
+        font-weight: 600;
+        color: rgba(0, 0, 0, 0.4);
+      }
 
-.span-all {
-  font-size: 12px;
-  font-weight: 700;
-  color: rgba(0, 0, 0, 0.9);
-  cursor: pointer;
-}
-
-.profile-others {
-  display: flex;
-  flex-direction: column;
+      .span-all {
+        font-size: 12px;
+        font-weight: 700;
+        color: rgba(0, 0, 0, 0.9);
+        cursor: pointer;
+      }
+    }
+    .profile-others {
+      display: flex;
+      flex-direction: column;
+    }
+  }
 }
 
 .footer {
@@ -58,16 +59,8 @@
   font-size: 12px;
   color: rgba(0, 0, 0, 0.3);
   cursor: pointer;
-}
 
-.footer .copyright {
-  margin-top: 22px;
-}
-
-.new {
-  margin-left: 15px;
-}
-
-.comments-list .new {
-  padding-top: 5px;
+  .copyright {
+    margin-top: 22px;
+  }
 }

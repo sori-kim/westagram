@@ -13,13 +13,15 @@
       align-items: center;
       justify-content: space-between;
 
-      .nav-left img {
-        margin: 0 auto;
-        text-align: center;
-        height: 32px;
+      .left {
+        img {
+          margin: 0 auto;
+          text-align: center;
+          height: 32px;
+        }
       }
 
-      .nav-center {
+      .center {
         input {
           width: 250px;
           height: 30px;
@@ -43,7 +45,7 @@
         }
       }
 
-      .nav-right {
+      .right {
         display: flex;
         justify-content: flex-end;
         img {

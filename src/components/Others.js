@@ -5,15 +5,15 @@ import "./Others.scss";
 export class Others extends React.Component {
   render() {
     return (
-      <div class="Other">
-        <div class="other-left">
-          <img class="otherImg" alt="sewoon" src={sewoon} />
-          <div class="others-desc">
-            <div class="profile-id">sewoon_j</div>
-            <div class="profile-desc">회원님을 팔로우합니다.</div>
+      <div className="Others">
+        <div className="other-left">
+          <img className="otherImg" alt="sewoon" src={sewoon} />
+          <div className="others-desc">
+            <div className="profile-id">sewoon_j</div>
+            <div className="profile-desc">회원님을 팔로우합니다.</div>
           </div>
         </div>
-        <div class="follow">팔로우</div>
+        <div className="follow">팔로우</div>
       </div>
     );
   }

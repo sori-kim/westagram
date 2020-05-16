@@ -1,5 +1,6 @@
 import React from "react";
 import "./Feed.scss";
+import GetComment from "../components/GetComment";
 import jelmi_profile from "../images/jel_profile.jpg";
 import jelmi_feed from "../images/jeolmi.jpg";
 import icon_heart from "../images/heart.png";
@@ -9,6 +10,47 @@ import icon_bookmark from "../images/bookmark.png";
 import icon_more from "../images/more.png";
 
 export class Feed extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      comments: [],
+      contents: "",
+    };
+  }
+
+  handleSubmit = (event) => {
+    event.preventDefault();
+  };
+
+  handleOnChange = (event) => {
+    this.setState({
+      contents: event.target.value,
+    });
+  };
+
+  handleOnClick = () => {
+    const arr = this.state.comments;
+    arr.push(this.state.contents);
+
+    this.setState({
+      contents: arr,
+    });
+
+    console.log(this.arr);
+
+    return (
+      <ul className="comments-list new">
+        {this.state.comments.map((comment, index) => (
+          <GetComment
+            user={comment.user}
+            content={comment.contents}
+            key={comment.index}
+          />
+        ))}
+      </ul>
+    );
+  };
+
   render() {
     return (
       <article className="Feed">
@@ -46,13 +88,22 @@ export class Feed extends React.Component {
           <p className="comment-id">x.xiaori</p>
           <p className="comment-blah">절미야 엘사야 사랑해 💖</p>
         </div>
-        <ul className="comments-list"></ul>
+
+        <ul class="comments-list"></ul>
+
         <div className="time">48분전</div>
 
-        <form className="comments-form">
-          <input className="no-outline" type="text" placeholder="댓글달기..." />
+        <form className="comments-form" onSubmit={this.handleSubmit}>
+          <input
+            onChange={this.handleOnChange}
+            className="no-outline"
+            type="text"
+            placeholder="댓글달기..."
+          />
           <div className="btn-wrapper">
-            <button className="coBtn">게시</button>
+            <button onClick={this.handleOnClick} className="coBtn">
+              게시
+            </button>
           </div>
         </form>
       </article>

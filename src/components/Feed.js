@@ -1,6 +1,5 @@
 import React from "react";
 import "./Feed.scss";
-import GetComment from "../components/GetComment";
 import jelmi_profile from "../images/jel_profile.jpg";
 import jelmi_feed from "../images/jeolmi.jpg";
 import icon_heart from "../images/heart.png";
@@ -14,7 +13,8 @@ export class Feed extends React.Component {
     super();
     this.state = {
       comments: [],
-      contents: "",
+      content: "",
+      isActive: false,
     };
   }
 
@@ -24,34 +24,35 @@ export class Feed extends React.Component {
 
   handleOnChange = (event) => {
     this.setState({
-      contents: event.target.value,
+      content: event.target.value,
+      isActive: true,
     });
   };
 
   handleOnClick = () => {
     const arr = this.state.comments;
-    arr.push(this.state.contents);
+    const new_arr = arr.concat(this.state.content);
 
-    this.setState({
-      contents: arr,
-    });
+    this.setState(
+      {
+        comments: new_arr,
+        content: "",
+      },
 
-    console.log(this.arr);
-
-    return (
-      <ul className="comments-list new">
-        {this.state.comments.map((comment, index) => (
-          <GetComment
-            user={comment.user}
-            content={comment.contents}
-            key={comment.index}
-          />
-        ))}
-      </ul>
+      () => {
+        console.log(this.content);
+      }
     );
   };
 
   render() {
+    const commentValue = this.state.comments;
+    const commentList = commentValue.map((content, index) => (
+      <li key={index} className="new">
+        x.xiaori {content}
+      </li>
+    ));
+
     return (
       <article className="Feed">
         <div className="profile">
@@ -89,7 +90,7 @@ export class Feed extends React.Component {
           <p className="comment-blah">절미야 엘사야 사랑해 💖</p>
         </div>
 
-        <ul class="comments-list"></ul>
+        <ul className="comments-list">{commentList}</ul>
 
         <div className="time">48분전</div>
 
@@ -101,7 +102,10 @@ export class Feed extends React.Component {
             placeholder="댓글달기..."
           />
           <div className="btn-wrapper">
-            <button onClick={this.handleOnClick} className="coBtn">
+            <button
+              onClick={this.handleOnClick}
+              className={this.state.isActive ? "coBtn activeBtn" : "coBtn"}
+            >
               게시
             </button>
           </div>
